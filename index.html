@@ -12,43 +12,43 @@
   <!-- SEMESTRE 1 -->
   <div class="semester">
     <h2>Semestre 1</h2>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="estrategias_aprendizaje" onclick="toggleInfo(this); handleCourseClick(this);">
       Estrategias para el Aprendizaje
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="bio_comportamiento" onclick="toggleInfo(this); handleCourseClick(this);">
       Fundamentos Biológicos del Comportamiento
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="fund_filosoficos" onclick="toggleInfo(this); handleCourseClick(this);">
       Fundamentos Filosóficos de la Psicología
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="evolucion_historia" onclick="toggleInfo(this); handleCourseClick(this);">
       Evolución Histórica de la Psicología
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="procesos_cognitivos" onclick="toggleInfo(this); handleCourseClick(this);">
       Procesos Cognitivos
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="taller_comunicacion" onclick="toggleInfo(this); handleCourseClick(this);">
       Taller de Comunicación
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="antropologia" onclick="toggleInfo(this); handleCourseClick(this);">
       Antropología
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
@@ -59,31 +59,31 @@
   <!-- SEMESTRE 2 -->
   <div class="semester">
     <h2>Semestre 2</h2>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="etica" data-prereq="antropologia" onclick="toggleInfo(this); handleCourseClick(this);">
       Ética
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Antropología.
       </div>
     </div>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="neuropsicologia" data-prereq="bio_comportamiento" onclick="toggleInfo(this); handleCourseClick(this);">
       Neuropsicología
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Fundamentos Biológicos del Comportamiento.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="procesos_afectivos" onclick="toggleInfo(this); handleCourseClick(this);">
       Procesos Afectivos
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="intro_metodologia" onclick="toggleInfo(this); handleCourseClick(this);">
       Introducción a la Metodología de la Investigación
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="taller_grupal" onclick="toggleInfo(this); handleCourseClick(this);">
       Taller de Trabajo Grupal
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
@@ -91,40 +91,40 @@
     </div>
   </div>
 
-  <!-- SEMESTRE 3 -->
+    <!-- SEMESTRE 3 -->
   <div class="semester">
     <h2>Semestre 3</h2>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="electivo_formacion_1" data-prereq="etica" onclick="toggleInfo(this); handleCourseClick(this);">
       Electivo de Formación Integral I
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ética.
       </div>
     </div>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="evolutiva_1" data-prereq="procesos_cognitivos,procesos_afectivos" onclick="toggleInfo(this); handleCourseClick(this);">
       Psicología Evolutiva I
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Procesos Cognitivos y Procesos Afectivos.
       </div>
     </div>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="psico_personalidad" data-prereq="procesos_cognitivos,procesos_afectivos" onclick="toggleInfo(this); handleCourseClick(this);">
       Psicología de la Personalidad
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Procesos Cognitivos y Procesos Afectivos.
       </div>
     </div>
-    <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course locked" data-id="metodologia_aplicada" data-prereq="intro_metodologia" onclick="toggleInfo(this); handleCourseClick(this);">
       Metodología de la Investigación Aplicada a la Psicología
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Introducción a la Metodología de la Investigación.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="psico_social_1" onclick="toggleInfo(this); handleCourseClick(this);">
       Psicología Social I
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
       </div>
     </div>
-    <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
+    <div class="course" data-id="taller_entrevista" onclick="toggleInfo(this); handleCourseClick(this);">
       Taller de Entrevista
       <div class="course-info">
         <strong>Prerrequisitos:</strong> Ninguno.
@@ -133,262 +133,261 @@
   </div>
 
   <!-- SEMESTRE 4 -->
-<div class="semester">
-  <h2>Semestre 4</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicopatología General
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología de la Personalidad.
+  <div class="semester">
+    <h2>Semestre 4</h2>
+    <div class="course locked" data-id="psicopatologia_general" data-prereq="psico_personalidad" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicopatología General
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología de la Personalidad.
+      </div>
+    </div>
+    <div class="course locked" data-id="evolutiva_2" data-prereq="evolutiva_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicología Evolutiva II
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología Evolutiva I.
+      </div>
+    </div>
+    <div class="course locked" data-id="psico_social_2" data-prereq="psico_social_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicología Social II
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología Social I.
+      </div>
+    </div>
+    <div class="course locked" data-id="analisis_datos_cuantitativos" data-prereq="metodologia_aplicada" onclick="toggleInfo(this); handleCourseClick(this);">
+      Análisis de Datos Cuantitativos
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
+      </div>
+    </div>
+    <div class="course locked" data-id="eval_psico_cognitiva" data-prereq="psico_personalidad,neuropsicologia" onclick="toggleInfo(this); handleCourseClick(this);">
+      Evaluación Psicológica Cognitiva
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología de la Personalidad y Neuropsicología.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_formacion_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Formación Integral II
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicología Evolutiva II
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología Evolutiva I.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicología Social II
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología Social I.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Análisis de Datos Cuantitativos
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Evaluación Psicológica Cognitiva
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología de la Personalidad y Neuropsicología.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Formación Integral II
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
 
-<!-- SEMESTRE 5 -->
-<div class="semester">
-  <h2>Semestre 5</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicopatología y Psiquiatría Infantil
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicopatología General.
+    <!-- SEMESTRE 5 -->
+  <div class="semester">
+    <h2>Semestre 5</h2>
+    <div class="course locked" data-id="psiquiatria_infantil" data-prereq="psicopatologia_general" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicopatología y Psiquiatría Infantil
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicopatología General.
+      </div>
+    </div>
+    <div class="course locked" data-id="teorias_1" data-prereq="evolucion_historia" onclick="toggleInfo(this); handleCourseClick(this);">
+      Teorías Psicológicas I
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Evolución Histórica de la Psicología.
+      </div>
+    </div>
+    <div class="course locked" data-id="analisis_datos_cualitativos" data-prereq="metodologia_aplicada" onclick="toggleInfo(this); handleCourseClick(this);">
+      Análisis de Datos Cualitativos
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
+      </div>
+    </div>
+    <div class="course locked" data-id="eval_personalidad" data-prereq="eval_psico_cognitiva" onclick="toggleInfo(this); handleCourseClick(this);">
+      Evaluación Psicológica de la Personalidad
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Evaluación Psicológica Cognitiva.
+      </div>
+    </div>
+    <div class="course" data-id="politicas_publicas" onclick="toggleInfo(this); handleCourseClick(this);">
+      Políticas Públicas
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_formacion_3" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Formación Integral III
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Teorías Psicológicas I
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Evolución Histórica de la Psicología.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Análisis de Datos Cualitativos
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Evaluación Psicológica de la Personalidad
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Evaluación Psicológica Cognitiva.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Políticas Públicas
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Formación Integral III
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
 
-<!-- SEMESTRE 6 -->
-<div class="semester">
-  <h2>Semestre 6</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicopatología y Psiquiatría Adulto
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicopatología General.
+  <!-- SEMESTRE 6 -->
+  <div class="semester">
+    <h2>Semestre 6</h2>
+    <div class="course locked" data-id="psiquiatria_adulto" data-prereq="psicopatologia_general" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicopatología y Psiquiatría Adulto
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicopatología General.
+      </div>
+    </div>
+    <div class="course locked" data-id="teorias_2" data-prereq="evolucion_historia" onclick="toggleInfo(this); handleCourseClick(this);">
+      Teorías Psicológicas II
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Evolución Histórica de la Psicología.
+      </div>
+    </div>
+    <div class="course locked" data-id="eval_integrada" data-prereq="eval_personalidad" onclick="toggleInfo(this); handleCourseClick(this);">
+      Evaluación Psicológica Integrada
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Evaluación Psicológica de la Personalidad.
+      </div>
+    </div>
+    <div class="course locked" data-id="formulacion_proyectos" data-prereq="metodologia_aplicada" onclick="toggleInfo(this); handleCourseClick(this);">
+      Introducción a la Formulación y Evaluación de Proyectos Sociales
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
+      </div>
+    </div>
+    <div class="course locked" data-id="taller_persona" data-prereq="eval_personalidad" onclick="toggleInfo(this); handleCourseClick(this);">
+      Taller Persona del Psicólogo
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Evaluación Psicológica de la Personalidad.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_formacion_4" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Formación Integral IV
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Teorías Psicológicas II
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Evolución Histórica de la Psicología.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Evaluación Psicológica Integrada
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Evaluación Psicológica de la Personalidad.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Introducción a la Formulación y Evaluación de Proyectos Sociales
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Metodología de la Investigación Aplicada a la Psicología.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Taller Persona del Psicólogo
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Evaluación Psicológica de la Personalidad.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Formación Integral IV
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
 
-  <!-- SEMESTRE 7 -->
-<div class="semester">
-  <h2>Semestre 7</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Introducción a la Psicoterapia Sistémica
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Teorías Psicológicas I.
+    <!-- SEMESTRE 7 -->
+  <div class="semester">
+    <h2>Semestre 7</h2>
+    <div class="course locked" data-id="psicoterapia_sistemica" data-prereq="teorias_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Introducción a la Psicoterapia Sistémica
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Teorías Psicológicas I.
+      </div>
+    </div>
+    <div class="course locked" data-id="psicoterapia_psicoanalitica" data-prereq="teorias_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Introducción a la Psicoterapia Psicoanalítica
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Teorías Psicológicas I.
+      </div>
+    </div>
+    <div class="course locked" data-id="comportamiento_organizacional" data-prereq="psico_social_2,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Comportamiento Organizacional
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología Social II, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course locked" data-id="factores_educativos" data-prereq="evolutiva_2,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Factores Psicológicos en Procesos Educativos
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología Evolutiva II, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course locked" data-id="problemas_psicosociales" data-prereq="psico_social_2,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Problemas Psicosociales Actuales
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Psicología Social II, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course locked" data-id="integracion_psicologia" data-prereq="teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Integración en Psicología
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Teorías Psicológicas I y II.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Introducción a la Psicoterapia Psicoanalítica
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Teorías Psicológicas I.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Comportamiento Organizacional
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología Social II, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Factores Psicológicos en Procesos Educativos
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología Evolutiva II, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Problemas Psicosociales Actuales
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Psicología Social II, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Integración en Psicología
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Teorías Psicológicas I y II.
-    </div>
-  </div>
-</div>
 
-<!-- SEMESTRE 8 -->
-<div class="semester">
-  <h2>Semestre 8</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Introducción a la Psicoterapia Cognitiva
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Teorías Psicológicas II.
+  <!-- SEMESTRE 8 -->
+  <div class="semester">
+    <h2>Semestre 8</h2>
+    <div class="course locked" data-id="psicoterapia_cognitiva" data-prereq="teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Introducción a la Psicoterapia Cognitiva
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Teorías Psicológicas II.
+      </div>
+    </div>
+    <div class="course locked" data-id="psicoterapia_humanista" data-prereq="teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Introducción a la Psicoterapia Humanista
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Teorías Psicológicas II.
+      </div>
+    </div>
+    <div class="course locked" data-id="gestion_personas" data-prereq="comportamiento_organizacional,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Gestión de Personas y Organizaciones
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Comportamiento Organizacional, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course locked" data-id="gestion_escolar" data-prereq="factores_educativos,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Gestión Escolar
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Factores Psicológicos en Procesos Educativos, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course locked" data-id="psico_comunitaria" data-prereq="problemas_psicosociales,teorias_1,teorias_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Psicología Comunitaria
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Problemas Psicosociales Actuales, Teorías Psicológicas I y II.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_especializacion_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Especialización I
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Introducción a la Psicoterapia Humanista
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Teorías Psicológicas II.
+  <!-- SEMESTRE 9 -->
+  <div class="semester">
+    <h2>Semestre 9</h2>
+    <div class="course locked" data-id="proyecto_investigacion" data-prereq="analisis_datos_cuantitativos" onclick="toggleInfo(this); handleCourseClick(this);">
+      Proyecto de Investigación
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Análisis de Datos Cuantitativos.
+      </div>
+    </div>
+    <div class="course locked" data-id="electivo_diseno_intervencion" data-prereq="teorias_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo Diseño e Intervención
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Haber cursado asignaturas del área respectiva en niveles anteriores.
+      </div>
+    </div>
+    <div class="course locked" data-id="electivo_diseno_contextos" data-prereq="teorias_1" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo Diseño en Contextos
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Haber cursado asignaturas del área respectiva en niveles anteriores.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_especializacion_2" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Especialización II
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Gestión de Personas y Organizaciones
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Comportamiento Organizacional, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Gestión Escolar
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Factores Psicológicos en Procesos Educativos, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Psicología Comunitaria
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Problemas Psicosociales Actuales, Teorías Psicológicas I y II.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Especialización I
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
 
-<!-- SEMESTRE 9 -->
-<div class="semester">
-  <h2>Semestre 9</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Proyecto de Investigación
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Análisis de Datos Cuantitativos.
+  <!-- SEMESTRE 10 -->
+  <div class="semester">
+    <h2>Semestre 10</h2>
+    <div class="course locked" data-id="practica_profesional" data-prereq="proyecto_investigacion" onclick="toggleInfo(this); handleCourseClick(this);">
+      Práctica Profesional
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Todas las asignaturas hasta el 9° semestre aprobadas.
+      </div>
+    </div>
+    <div class="course locked" data-id="seminario_investigacion" data-prereq="proyecto_investigacion" onclick="toggleInfo(this); handleCourseClick(this);">
+      Seminario de Investigación
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Todas las asignaturas hasta el 9° semestre aprobadas.
+      </div>
+    </div>
+    <div class="course" data-id="electivo_especializacion_3" onclick="toggleInfo(this); handleCourseClick(this);">
+      Electivo de Especialización III
+      <div class="course-info">
+        <strong>Prerrequisitos:</strong> Ninguno.
+      </div>
     </div>
   </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo Diseño e Intervención
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Haber cursado asignaturas del área respectiva en niveles anteriores.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo Diseño en Contextos
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Haber cursado asignaturas del área respectiva en niveles anteriores.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Especialización II
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
 
-<!-- SEMESTRE 10 -->
-<div class="semester">
-  <h2>Semestre 10</h2>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Práctica Profesional
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Todas las asignaturas hasta el 9° semestre aprobadas.
-    </div>
-  </div>
-  <div class="course locked" onclick="toggleInfo(this); markAsApproved(this);">
-    Seminario de Investigación
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Todas las asignaturas hasta el 9° semestre aprobadas.
-    </div>
-  </div>
-  <div class="course" onclick="toggleInfo(this); markAsApproved(this);">
-    Electivo de Especialización III
-    <div class="course-info">
-      <strong>Prerrequisitos:</strong> Ninguno.
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
