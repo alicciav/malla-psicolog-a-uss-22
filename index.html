@@ -4,48 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Malla Curricular Interactiva</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f4f4f4;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-    }
-    .semester {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 20px 0;
-      border: 1px solid #ddd;
-      padding: 10px;
-      background: #fff;
-      border-radius: 8px;
-    }
-    .course {
-      flex: 1 0 200px;
-      margin: 10px;
-      padding: 15px;
-      background: #e0f7fa;
-      border: 1px solid #00796b;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .course:hover {
-      background: #b2ebf2;
-    }
-    .course-info {
-      display: none;
-      margin-top: 10px;
-      padding: 10px;
-      background: #fafafa;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Malla Curricular de Mi Carrera</h1>
@@ -69,7 +28,6 @@
         <strong>Prerequisitos:</strong> Ninguno.
       </div>
     </div>
-    <!-- Agrega más cursos aquí -->
   </div>
 
   <!-- Ejemplo de Semestre 2 -->
@@ -91,18 +49,8 @@
         <strong>Prerequisitos:</strong> Introducción a la Psicología.
       </div>
     </div>
-    <!-- Agrega más cursos aquí -->
   </div>
 
-  <script>
-    function toggleInfo(element) {
-      const info = element.querySelector('.course-info');
-      if (info.style.display === 'block') {
-        info.style.display = 'none';
-      } else {
-        info.style.display = 'block';
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
