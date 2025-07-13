@@ -1,75 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: "Times New Roman", serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 20px;
-  background: #f4f4f4;
+  background: #f0f2f5;
   color: #333;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
-/* Contenedor de grid */
+/* Contenedor en fila horizontal */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
 }
 
-/* Cada semestre */
+/* Scroll más suave y visible */
+.grid-container::-webkit-scrollbar {
+  height: 8px;
+}
+.grid-container::-webkit-scrollbar-track {
+  background: #eee;
+}
+.grid-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.grid-container:hover::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* Cada semestre columna */
 .semester {
-  background: #fff;
+  min-width: 220px;
+  flex: 0 0 auto;
+  background: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+
+.semester:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Título de semestre */
 .semester h2 {
   text-align: center;
-  color: #00796b;
+  color: #1976d2;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 /* Cursos normales (naranjo) */
 .course {
-  background: #ffe0b2; /* Naranjo claro */
-  border: 1px solid #fb8c00; /* Naranjo fuerte */
-  padding: 10px;
+  background: #fff3e0; /* Naranjo claro */
+  border: 1px solid #ffa726;
+  padding: 12px;
   margin: 10px 0;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
 }
 
 /* Hover sobre curso */
 .course:hover {
-  background: #ffcc80; /* Naranjo más intenso */
-  transform: scale(1.02);
+  background: #ffe0b2; /* Naranjo más intenso */
+  transform: translateY(-2px);
 }
 
 /* Cursos bloqueados (celeste) */
 .course.locked {
-  background: #b3e5fc; /* Celeste claro */
-  border: 2px solid #0288d1; /* Celeste fuerte */
-  opacity: 0.7;
+  background: #e3f2fd; /* Celeste claro */
+  border: 1px solid #42a5f5;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
 /* Cursos aprobados (morado) */
 .course.approved {
-  background: #e1bee7; /* Morado claro */
-  border: 2px solid #8e24aa;
+  background: #f3e5f5; /* Morado claro */
+  border: 1px solid #ab47bc;
 }
 
-/* Información de cada curso */
+/* Información de curso */
 .course-info {
   display: none;
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 14px;
   background: #fafafa;
-  padding: 5px;
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
