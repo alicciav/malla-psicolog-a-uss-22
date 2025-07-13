@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+.semester {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.semester h2 {
+  width: 100%;
+  margin: 10px 0;
+  color: #00796b;
+}
+
+.course {
+  flex: 1 0 200px;
+  margin: 10px;
+  padding: 15px;
+  background: #e0f7fa;
+  border: 1px solid #00796b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.course:hover {
+  background: #b2ebf2;
+}
+
+.course-info {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
