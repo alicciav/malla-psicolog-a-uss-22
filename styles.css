@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -138,7 +139,8 @@ h1::after {
 .subtitulo {
   text-align: center;
   color: #555;
-  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-size: 18px;
   margin-top: -10px;
   margin-bottom: 30px;
   font-weight: 400;
