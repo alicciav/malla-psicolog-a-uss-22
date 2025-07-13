@@ -135,3 +135,11 @@ h1::after {
 .reset-button:hover {
   background: #b71c1c; /* Rojo más oscuro al pasar el mouse */
 }
+.subtitulo {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
