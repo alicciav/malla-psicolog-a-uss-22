@@ -12,7 +12,19 @@ h1 {
   text-align: center;
   margin: 30px 0;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
+  color: #1976d2;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1976d2;
+  margin: 8px auto 0;
+  border-radius: 2px;
 }
 
 /* Contenedor centrado con límite de ancho */
