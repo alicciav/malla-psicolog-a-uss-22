@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", serif;
   margin: 0;
   padding: 20px;
   background: #f4f4f4;
@@ -10,55 +10,26 @@ h1 {
   text-align: center;
 }
 
-/* Para scroll horizontal */
-body {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-/* Cada semestre es una columna */
+/* Cada semestre en bloque vertical */
 .semester {
-  display: inline-block;
-  vertical-align: top;
-  width: 300px;
-  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
   border: 1px solid #ddd;
   padding: 10px;
   background: #fff;
   border-radius: 8px;
-  white-space: normal; /* Para que el contenido haga saltos de línea */
 }
 
 .semester h2 {
+  width: 100%;
   margin: 10px 0;
   color: #00796b;
 }
 
+/* Ramos normales: NARANJO */
 .course {
-  margin: 10px 0;
+  flex: 1 0 200px;
+  margin: 10px;
   padding: 15px;
-  background: #e0f7fa;
-  border: 1px solid #00796b;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.course:hover {
-  background: #b2ebf2;
-}
-
-.course-info {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #fafafa;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-/* Estilo para ramos aprobados */
-.approved {
-  background: #bbdefb; /* Azul clarito */
-  border: 2px solid #1976d2;
-}
+  background: #f
