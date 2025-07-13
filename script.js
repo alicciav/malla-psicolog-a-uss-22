@@ -62,7 +62,8 @@ function handleCourseClick(element) {
       course.classList.remove("locked");
     }
   });
-}
+} // ESTA llave cierra handleCourseClick()
+
 function resetProgress() {
   if (confirm("¿Estás seguro de que deseas reiniciar todo el progreso?")) {
     localStorage.removeItem("approvedCourses");
