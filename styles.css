@@ -139,9 +139,10 @@ h1::after {
 .subtitulo {
   text-align: center;
   color: #3f51b5; /* Azul suave */
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-top: -10px;
   margin-bottom: 30px;
   font-weight: 400;
 }
+
