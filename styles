@@ -1,0 +1,75 @@
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cada semestre */
+.semester {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Título de semestre */
+.semester h2 {
+  text-align: center;
+  color: #00796b;
+}
+
+/* Cursos normales (naranjo) */
+.course {
+  background: #ffe0b2; /* Naranjo claro */
+  border: 1px solid #fb8c00; /* Naranjo fuerte */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover sobre curso */
+.course:hover {
+  background: #ffcc80; /* Naranjo más intenso */
+  transform: scale(1.02);
+}
+
+/* Cursos bloqueados (celeste) */
+.course.locked {
+  background: #b3e5fc; /* Celeste claro */
+  border: 2px solid #0288d1; /* Celeste fuerte */
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Cursos aprobados (morado) */
+.course.approved {
+  background: #e1bee7; /* Morado claro */
+  border: 2px solid #8e24aa;
+}
+
+/* Información de cada curso */
+.course-info {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  background: #fafafa;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
