@@ -63,3 +63,9 @@ function handleCourseClick(element) {
     }
   });
 }
+function resetProgress() {
+  if (confirm("¿Estás seguro de que deseas reiniciar todo el progreso?")) {
+    localStorage.removeItem("approvedCourses");
+    location.reload();
+  }
+}
